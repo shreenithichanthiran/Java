@@ -1,0 +1,15 @@
+package Basic;
+import java.util.Scanner;
+public class Q4 {
+public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+	int tuitionfees = s.nextInt();
+	int scholarship= s.nextInt();
+	int examfees = s.nextInt();
+	int libraryfees = s.nextInt();
+	int sum= tuitionfees*scholarship/100;
+	int value=tuitionfees-sum+examfees+libraryfees;
+	System.out.println(value);
+}
+}
+
