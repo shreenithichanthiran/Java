@@ -1,0 +1,16 @@
+package Basic;
+import java.util.Scanner;
+public class Q3 {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int sales = scan.nextInt();
+		int discount = scan.nextInt();
+		int gst = scan.nextInt();
+		int Dis= sales*discount/100;
+		int sum=sales-Dis;
+		int Gst = sum*gst/100;
+		int count=Dis-Gst;
+		int value = sales-count;
+		System.out.println(value);
+	}
+}
