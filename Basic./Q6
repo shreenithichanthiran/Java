@@ -1,0 +1,16 @@
+package Basic;
+import java.util.Scanner;
+public class Q6 {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int distance = scan.nextInt();
+		int mileage =  scan.nextInt();
+		int fuelprice = scan.nextInt();
+		int tollcharge = scan.nextInt();
+		int sum = distance/mileage;
+		int price=sum*fuelprice;
+		int total=price+tollcharge;
+		System.out.println(total);
+	}
+
+}
