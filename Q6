@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Q6 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int familyIncome = s.nextInt();
+        int percentage = s.nextInt();
+
+        boolean result = (familyIncome < 200000) && (percentage >= 75);
+
+        System.out.println(result + " Scholarship Granted");
+        System.out.println(!result + " Not Granted");
+    }
+}
