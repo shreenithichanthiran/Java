@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Q8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int age = sc.nextInt();
+        int idProof = sc.nextInt();
+
+        boolean result = (age >= 18) && (idProof == 1);
+
+        System.out.println(result + " Entry Allowed");
+        System.out.println(!result + " Entry Denied");
+    }
+}
