@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class LoginAuth {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int usernameMatch = s.nextInt();
+        int passwordMatch = s.nextInt();
+        int accountLocked = s.nextInt();
+
+        boolean result = (usernameMatch == 1) && (passwordMatch == 1) && !(accountLocked == 1);
+
+        System.out.println(result ? "Login Success" : "Login Failed");
+    }
+}
